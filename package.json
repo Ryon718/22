@@ -15,9 +15,11 @@
   "author": "Your Name Here",
   "license": "MIT",
   "dependencies": {
-    "twilio": "^4.20.0",   // <-- ✅ 修复了：这里加上了逗号
-    "dotenv": "^16.3.1"    // <-- ✅ 确保它后面有逗号（如果还有其他依赖）
+    // ... 其他依赖项
+    "twilio": "^4.20.0", // <-- ✅ 属性名 "twilio" 被双引号包裹了
+    "dotenv": "^16.3.1"  // <-- ✅ 属性名 "dotenv" 也被双引号包裹了
   },
+
   "devDependencies": {
     "nodemon": "^3.0.2"     // <-- ✅ 修复了：这里加上了逗号
   }
