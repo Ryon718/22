@@ -7,6 +7,10 @@
     "start": "node api/voice-handler.js"
   },
   "dependencies": {
-    "twilio": "^4.20.0"  // 使用最新的版本号
+    "twilio": "^4.20.0",  // <-- ⭐⭐⭐ 这里加上了逗号！
+    "dotenv": "^16.3.1"   // <-- 假设你还加了这个依赖，它后面也需要逗号
+  }, // <-- dependencies 对象结束，所以这里不需要逗号（除非后面还有其他顶级属性）
+  "devDependencies": {
+    "nodemon": "^3.0.2"     // <-- 这个是最后一个属性，所以它后面不需要逗号
   }
 }
