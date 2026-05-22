@@ -1,0 +1,12 @@
+{
+  "name": "call-bomber-backend",
+  "version": "1.0.0",
+  "description": "Twilio Voice Handler for Bombing App",
+  "main": "api/voice-handler.js", 
+  "scripts": {
+    "start": "node api/voice-handler.js"
+  },
+  "dependencies": {
+    "twilio": "^4.20.0"  // 使用最新的版本号
+  }
+}
