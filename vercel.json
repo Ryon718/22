@@ -1,10 +1,9 @@
-// vercel.json
 {
   "version": 2,
   "builds": [
     {
-      "src": "api/voice-handler.js", // <-- 指向你的代码文件的完整路径
-      "use": "@vercel/node"        // <-- 使用 Node.js 环境来运行它 (因为你用了 require)
+      "src": "api/voice-handler.js", // <-- 确认路径是否正确！
+      "use": "@vercel/node"        // <-- 确保这个是 @vercel/node，而不是其他环境
     }
   ],
   "routes": [
