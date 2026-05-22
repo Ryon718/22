@@ -1,0 +1,20 @@
+// vercel.json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/voice-handler.js", // <-- 指向你的代码文件的完整路径
+      "use": "@vercel/node"        // <-- 使用 Node.js 环境来运行它 (因为你用了 require)
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",                 // 匹配根路径：访问 https://your-app-name.vercel.app/ 时
+      "dest": "api/voice-handler.js" // 将请求导向你的文件
+    },
+    {
+      "src": "/api/(.*)",         // 匹配所有以 /api/ 开头的请求，例如 /api/test
+      "dest": "api/voice-handler.js" // 也将这些请求导向你的文件
+    }
+  ]
+}
